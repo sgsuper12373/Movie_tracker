@@ -1,0 +1,19 @@
+1-> simple home page with navbar,
+
+navbar=> 
+	Movie 
+	Anime
+	Animated Movies	
+	Series
+	About me
+
+2-> after nav bar some greetings 
+
+3-> showcase of all tyep top 5 contents  I liked, and quick link to them
+
+4-> color_pallate => 
+	background => 2E073F
+	primary buttons => 7A1CAC
+	Secondary section =>AD49E1
+	hower effects => EBD3F8
+	
