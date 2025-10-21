@@ -1,12 +1,111 @@
-*{
-    background-color: #2E073F ;
-    color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-#Nabar{
-    background-color: #AD49E1;
+body {
+    background-color: #2E073F;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-#Navbar_ul .li{
-    background-color: #AD49E1;
+nav {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #7A1CAC, #AD49E1);
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(173, 73, 225, 0.5);
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.nav_list {
+    list-style: none;
+    margin: 0 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav_list::after {
+    content: "  ";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.nav_list:hover::after {
+    width: 60%;
+}
+
+.nav_list:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+/* Headings */
+#Greetings {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #FFD700;
+    margin-top: 40px;
+    text-shadow: 0 0 10px #FFD700;
+}
+
+#Title {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #EBD3F8;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #AD49E1;
+    width: 80%;
+    margin: 20px auto;
+    opacity: 0.5;
+}
+
+.quick_links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px auto;
+    width: 90%;
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: background 0.3s ease;
+}
+
+.quick_links:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.quick_links::before {
+    content: attr(id);
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #AD49E1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
