@@ -105,6 +105,16 @@ nav {
     color: var(--text-primary);
     transform: scale(0.95);
 }
+a{
+    color: var(--text-primary);
+}
+a:visited{
+    color: var(--text-primary);
+}
+
+a:hover{
+    color: goldenrod;
+}
 
 /* Header Section */
 #Greetings {

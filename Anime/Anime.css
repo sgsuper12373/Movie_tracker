@@ -112,6 +112,16 @@ nav {
     justify-content: center;
     gap: 20px;
 }
+a{
+    color: var(--text-primary);
+}
+a:visited{
+    color: var(--text-primary);
+}
+
+a:hover{
+    color: goldenrod;
+}
 
 .AnimeCard {
     width: 300px;
