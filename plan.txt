@@ -16,4 +16,11 @@ navbar=>
 	primary buttons => 7A1CAC
 	Secondary section =>AD49E1
 	hower effects => EBD3F8
+
+
+4 dec 2025: 
+	added pages for WebSeries with renaming files for understanding and readbiliyt
+	added pages for Animated movies with renaming files for understanding and readbility 
+	chages made in css of all four Anime, AnimeMovie, Movies, WebSeries  for consistancy and can be same file can be used for all 	
+
 	
