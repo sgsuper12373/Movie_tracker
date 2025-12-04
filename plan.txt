@@ -22,5 +22,13 @@ navbar=>
 	added pages for WebSeries with renaming files for understanding and readbiliyt
 	added pages for Animated movies with renaming files for understanding and readbility 
 	chages made in css of all four Anime, AnimeMovie, Movies, WebSeries  for consistancy and can be same file can be used for all 	
+	added content inside AnimeMovies and WebSeries
+
+	Future Plan's 
+		add javascript to increase count of number of episodes and seasons watched for anime and web series
+		two counter can be implimented season and episodes; 
+		also using js instead of wrting / repeating same html structure for each content cards
+		we can create a file and write card content and parse it using js and add cards to document 
+		so code will be more readable and maintainable
 
 	

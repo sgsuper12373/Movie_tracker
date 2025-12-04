@@ -76,7 +76,7 @@ nav {
 }
 
 .nav_list {
-    list-style: none;
+    /* list-style: none; */
     color: var(--text-secondary);
     font-weight: 600;
     /* Increased font size */
