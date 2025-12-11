@@ -9,13 +9,14 @@ navbar=>
 
 2-> after nav bar some greetings 
 
-3-> showcase of all tyep top 5 contents  I liked, and quick link to them
+3-> showcase of all tyep top 4 contents  I liked, and quick link to them
 
 4-> color_pallate => 
 	background => 2E073F
 	primary buttons => 7A1CAC
 	Secondary section =>AD49E1
 	hower effects => EBD3F8
+	//This idea is dropped
 
 
 4 dec 2025: 
@@ -30,5 +31,12 @@ navbar=>
 		also using js instead of wrting / repeating same html structure for each content cards
 		we can create a file and write card content and parse it using js and add cards to document 
 		so code will be more readable and maintainable
+10 dec 2025 12.24.00: 
+	Idea of reading data from config file and redenring data using javascript won't work directly as there is no direct file 
+	handling functionality in javascript. javascript can only read data from server. browser js can't read local files. 
+
+	now I am just tyring to hardcode the data in javascript array and redering it using card creating function 
+	This can be further exteded and http protocal can be used to read data from server and render it using javascript
+	but before that I migth replicate code written for the WebSeries to other sections
 
 	
