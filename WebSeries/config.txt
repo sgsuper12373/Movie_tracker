@@ -1,7 +1,0 @@
-IMG_URL : "../Assests/WebSeries/Lucifer.jpeg"
-IMG_ALT : "Lucifer WebSeries Poster"
-CONTENT_TITLE : "Lucifer" 
-IMDB_RATING : "⭐ 8.4"
-CONTENT_TAGS : "Dark Fantasy, Crime Drama"
-CONTENT_DESCRIPTION : "Lucifer is a dark fantasy crime drama television series created by Roberto Aguirre-Sacasa. It stars Tom Holland as Detective Gabriel "Gabi" Stanton, a homicide detective who is assigned to a case involving Lucifer Morningstar (played by Mads Mikkelsen), a powerful angel who has been sent to Earth to investigate a series of murders."
-

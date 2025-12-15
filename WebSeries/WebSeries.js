@@ -1,28 +1,3 @@
-const contentData = [
-  {
-    id: "lucifer",
-    title: "Lucifer",
-    image: "../Assests/WebSeries/Lucifer.jpeg",
-    alt: "Lucifer WebSeries Poster",
-    tags: ["Dark Fantasy", "Crime Drama"],
-    rating: "⭐ 8.4",
-    description: `Lucifer is a dark fantasy crime drama television series created by
-    Roberto Aguirre-Sacasa. It stars Tom Holland as Detective Gabriel "Gabi" Stanton,
-    a homicide detective assigned to a case involving Lucifer Morningstar.`
-  },
-  {
-    id: "breaking_bad",
-    title: "Breaking Bad",
-    image: "../Assests/WebSeries/BreakingBad.jpeg",
-    alt: "Breaking Bad Poster",
-    tags: ["Crime", "Thriller"],
-    rating: "⭐ 9.5",
-    description: `A high school chemistry teacher turned methamphetamine producer
-    navigates the dangers of the criminal underworld.`
-  }
-];
-
-
 
 function createContentCard(data) {
   const card = document.createElement("div");
@@ -76,19 +51,32 @@ function createContentCard(data) {
   return card;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const container = document.querySelector(".content_container");
-  if (container) {
-    const fragment = document.createDocumentFragment();
+async function loadLocalData() {
+  try {
+    const container = document.querySelector(".content_container");
+    if (!container) {
+      console.error("Container .content_container not found");
+      return;
+    }
 
-    contentData.forEach(item => {
+    const response = await fetch('./data.json');
+    if (!response.ok) {
+      throw new Error("Could not fetch the data file");
+    }
+
+    const data = await response.json();
+
+    const fragment = document.createDocumentFragment();
+    data.forEach(item => {
       const card = createContentCard(item);
       fragment.appendChild(card);
     });
 
     container.appendChild(fragment);
-  } else {
-    console.error("Container .content_container not found");
-  }
-});
 
+  } catch (error) {
+    console.error("Error loading JSON:", error);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', loadLocalData);
